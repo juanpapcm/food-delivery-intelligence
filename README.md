@@ -111,10 +111,10 @@ The confidence interval is ±1.28 × residual-std(train), i.e. roughly an 80% ba
 | Model | CV MAE (min) | CV RMSE | CV R² | Test MAE | Test RMSE | Test R² |
 |---|---|---|---|---|---|---|
 | **LinearRegression** 🏆 | **6.84 ± 0.45** | 11.02 | 0.75 | **5.90** | **8.69** | **0.83** |
-| RandomForest (150 × d10) | 7.61 ± 0.53 | 11.81 | 0.72 | — | — | — |
-| XGBoost (250 × d5) | 7.78 ± 0.73 | 12.20 | 0.70 | — | — | — |
+| RandomForest (150 × d10) | 7.61 ± 0.53 | 11.81 | 0.72 | - | - | - |
+| XGBoost (250 × d5) | 7.78 ± 0.73 | 12.20 | 0.70 | - | - | - |
 
-MAE is the headline metric — user-facing ETAs hurt roughly linearly in the miss size, so MAE matches the cost better than RMSE. Rationale in [model_notes.md](model_notes.md).
+MAE is the headline metric - user-facing ETAs hurt roughly linearly in the miss size, so MAE matches the cost better than RMSE. Rationale in [model_notes.md](model_notes.md).
 
 **Drivers (coef × feature_std, in minutes of ETA):**
 
@@ -140,11 +140,11 @@ Full tables and fixes in [error_insights.md](error_insights.md).
 
 ## Further reading
 
-- [EDA_report.md](EDA_report.md) — data quality, distributions, correlations
-- [model_notes.md](model_notes.md) — why MAE, why Linear won, tuning approach
-- [explainability.md](explainability.md) — feature importance, residual analysis
-- [error_insights.md](error_insights.md) — cohort error breakdown + fixes
-- [strategic_reflections.md](strategic_reflections.md) — 5 questions (rainy-day bias, city transfer, productionization, signature insight)
+- [EDA_report.md](EDA_report.md) - data quality, distributions, correlations
+- [model_notes.md](model_notes.md) - why MAE, why Linear won, tuning approach
+- [explainability.md](explainability.md) - feature importance, residual analysis
+- [error_insights.md](error_insights.md) - cohort error breakdown + fixes
+- [strategic_reflections.md](strategic_reflections.md) - 5 questions (rainy-day bias, city transfer, productionization, signature insight)
 - [sql/sql_queries.sql](sql/sql_queries.sql), [sql/sql_insights.md](sql/sql_insights.md)
 
 ## GenAI disclosure

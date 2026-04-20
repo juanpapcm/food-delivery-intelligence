@@ -23,7 +23,7 @@ ORDER BY 1;
 If the lunch / dinner peaks show both high avg time AND a jump in
 `pct_high_traffic`, the slowdown is the city and the fix is staging couriers
 near dense restaurant areas before the rush. If avg time spikes but traffic
-doesn't, it's us — not enough couriers online, or kitchens overwhelmed — and
+doesn't, it's us - not enough couriers online, or kitchens overwhelmed - and
 the fix is scheduling / surge incentives.
 
 ---
@@ -47,7 +47,7 @@ GROUP BY 1;
 ```
 
 If rating/time improves a lot from the <1m bucket to the 1-3m bucket and
-then plateaus, most of the learning happens in the first weeks — worth
+then plateaus, most of the learning happens in the first weeks - worth
 investing in a strong onboarding (shadow rides, mentor couriers) and not
 overpaying for tenure. If the curve keeps climbing past 6 months, courier
 retention is directly an SLA lever and churn should be treated as an Ops
@@ -77,7 +77,7 @@ WHERE a.weather_condition = 'Clear'
 ORDER BY extra_minutes DESC;
 ```
 
-Areas at the top of the list are the fragile ones — usually outskirts with
+Areas at the top of the list are the fragile ones - usually outskirts with
 fewer active couriers, or areas with bad roads. Two concrete actions: (1)
 widen the shown ETA in those areas when the forecast turns bad so CSAT
 doesn't tank, and (2) pre-position or bonus couriers there ahead of the
@@ -122,6 +122,6 @@ The important thing here is what the gap means when you cross it with prep
 time. High gap + high `avg_preparation_time_min` = kitchen-bound; the
 conversation is about prep time, throttling orders at peak, or changing their
 SLA. High gap + normal prep = pickup friction (hard-to-find entrance, no
-courier waiting area, bad handoff) — different fix, usually cheaper. Just
+courier waiting area, bad handoff) - different fix, usually cheaper. Just
 ranking "slowest restaurants" without that split sends Ops after the wrong
 thing.
